@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "tailwindcss-ruby", "~> 4.1"
+
+gem "devise", "~> 4.9"
