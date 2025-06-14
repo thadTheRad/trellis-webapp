@@ -35,6 +35,9 @@
     <%= button_to "Login",
     :login,
     method: :get,
+    form: {
+      data: { turbo_frame: "landing_main_content" }
+    },
     class:
       "text-white font-sans font-bold px-5 py-2 hover:opacity-80 transition duration-200" %>
   </div>
