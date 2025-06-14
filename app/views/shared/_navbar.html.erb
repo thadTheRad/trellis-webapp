@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<div
+  class="
+    fixed top-5 left-5 right-5 h-20 bg-slate-800 shadow flex items-center px-6 z-50
+    rounded-lg border border-white
+  "
+>
+  <!-- Hamburger Icon -->
+  <div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 text-white"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5"
+      />
+    </svg>
+  </div>
+  <!-- TRELLIS Home Button -->
+  <div class="ml-4">
+    <%= button_to "TRELLIS",
+    :landing,
+    method: :get,
+    class:
+      "bg-gradient-to-r from-lime-400 to-blue-500 text-transparent bg-clip-text font-sans font-bold px-5 py-2 hover:opacity-80 transition duration-200" %>
+  </div>
+  <!-- Login Button -->
+  <div class="ml-auto">
+    <%= button_to "Login",
+    :login,
+    method: :get,
+    class:
+      "text-white font-sans font-bold px-5 py-2 hover:opacity-80 transition duration-200" %>
+  </div>
+</div>

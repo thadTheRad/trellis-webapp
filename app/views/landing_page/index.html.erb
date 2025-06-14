@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<div class="w-screen h-10 bg-blue-300 shadow flex items-center"
-  <%= button_to "TRELLIS", landing_path, method: :get, class: "hover:bg-gray-400" %>
-</div>
-<div class="flex items-center h-screen w-screen pt-10">
-  <div class="bg-gray-100 rounded-lg shadow w-fit">
-    <p>hello world!</p>
+<div class="flex items-center justify-center h-screen w-screen bg-slate-900">
+  <!-- Navbar -->
+  <%= render "shared/navbar" %>
+  <!-- Main Content -->
+  <div
+    class="
+      bg-gray-800 rounded-lg shadow w-fit border border-white text-white p-30
+    "
+  >
+    <%= turbo_frame_tag "landing_main_content" do %>
+      <div class="border border-red-900">
+        <p>
+          turbo_frame_tag: Landing_main_content
+        </p>
+      </div>
+    <% end %>
   </div>
 </div>
